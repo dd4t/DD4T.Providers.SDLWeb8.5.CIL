@@ -7,7 +7,7 @@ using DD4T.ContentModel;
 namespace DD4T.Providers.SDLWeb85.CIL
 {
     public class ExtendedQueryParameters : ITridionQueryWrapper
-    { 
+    {
         public enum QueryLogic
         {
             AllCriteriaMatch,
@@ -20,7 +20,7 @@ namespace DD4T.Providers.SDLWeb85.CIL
             Descending
         }
 
-       
+
 
         public string[] QuerySchemas { get; set; }
         public IList<MetaQueryItem> MetaQueryValues { get; set; }
@@ -39,7 +39,7 @@ namespace DD4T.Providers.SDLWeb85.CIL
         public ExtendedQueryParameters()
         {
             // Default all parameters
-            QuerySchemas = new string[]{};
+            QuerySchemas = new string[] { };
             MetaQueryValues = new List<MetaQueryItem>();
             MetaQueryLogic = QueryLogic.AllCriteriaMatch;
 
@@ -185,7 +185,8 @@ namespace DD4T.Providers.SDLWeb85.CIL
             else
             {
                 // Why do we need to tell Tridion what data type the field is! Its in the database already!
-                paramSort = new CustomMetaKeyColumn(QuerySortField, typeof(MetadataType).GetField(SortType.ToString()).GetValue(null) as MetadataType);
+                /* FIX: Does not work (null pointer exception): var sType = typeof(MetadataType).GetField(SortType.ToString()).GetValue(null) as MetadataType;*/
+                paramSort = new CustomMetaKeyColumn(QuerySortField, SortType);
             }
             SortDirection paramSortDirection = typeof(SortParameter).GetField(QuerySortOrder.ToString()).GetValue(null) as SortDirection;
             SortParameter sortParameter = new SortParameter(paramSort, paramSortDirection);
@@ -237,7 +238,7 @@ namespace DD4T.Providers.SDLWeb85.CIL
         }
         public QueryOperator MetaOperator { get; set; }
 
-        public MetaQueryItem(string fieldName, object fieldValue): this(fieldName, fieldValue, QueryOperator.Equal)
+        public MetaQueryItem(string fieldName, object fieldValue) : this(fieldName, fieldValue, QueryOperator.Equal)
         {
         }
 
