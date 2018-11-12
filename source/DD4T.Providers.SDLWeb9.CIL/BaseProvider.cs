@@ -1,10 +1,10 @@
-﻿using DD4T.ContentModel.Contracts.Providers;
-using DD4T.ContentModel.Contracts.Resolvers;
+﻿using DD4T.ContentModel.Contracts.Configuration;
 using DD4T.ContentModel.Contracts.Logging;
-using DD4T.ContentModel.Contracts.Configuration;
+using DD4T.ContentModel.Contracts.Providers;
+using DD4T.ContentModel.Contracts.Resolvers;
 using System;
 
-namespace DD4T.Providers.SDLWeb85.CIL
+namespace DD4T.Providers.SDLWeb9.CIL
 {
     public class BaseProvider : IProvider
     {

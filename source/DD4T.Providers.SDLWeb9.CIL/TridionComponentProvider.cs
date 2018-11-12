@@ -1,11 +1,8 @@
 ﻿using DD4T.ContentModel.Contracts.Providers;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DD4T.Providers.SDLWeb85.CIL
+namespace DD4T.Providers.SDLWeb9.CIL
 {
     [Obsolete("use the ComponentPresentationProvider instead")]
     public class TridionComponentProvider : IComponentProvider

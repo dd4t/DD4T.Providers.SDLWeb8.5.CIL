@@ -1,15 +1,10 @@
-﻿using DD4T.ContentModel;
-
-namespace DD4T.Providers.SDLWeb85.CIL
+﻿namespace DD4T.Providers.SDLWeb9.CIL
 {
+    using DD4T.ContentModel.Contracts.Providers;
+    using DD4T.Utils.ExtensionMethods;
     using System;
     using System.Collections.Generic;
     using Tridion.ContentDelivery.Web.Linking;
-    using DD4T.ContentModel.Contracts.Providers;
-    using DD4T.Utils;
-    using DD4T.Utils.ExtensionMethods;
-    using DD4T.ContentModel.Contracts.Configuration;
-    using DD4T.ContentModel.Contracts.Resolvers;
 
 
     public class TridionLinkProvider : BaseProvider, ILinkProvider, IDisposable

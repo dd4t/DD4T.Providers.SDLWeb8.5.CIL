@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Tridion.ContentDelivery.DynamicContent.Query;
-using DD4T.ContentModel;
 
-namespace DD4T.Providers.SDLWeb85.CIL
+namespace DD4T.Providers.SDLWeb9.CIL
 {
     public class ExtendedQueryParameters : ITridionQueryWrapper
     {

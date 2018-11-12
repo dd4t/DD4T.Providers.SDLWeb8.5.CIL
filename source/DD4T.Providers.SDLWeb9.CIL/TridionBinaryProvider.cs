@@ -1,19 +1,16 @@
-﻿using System;
-using Tridion.ContentDelivery.DynamicContent;
-using Tridion.ContentDelivery.Meta;
-using DD4T.ContentModel;
+﻿using DD4T.ContentModel;
+using DD4T.ContentModel.Contracts.Providers;
 using DD4T.ContentModel.Exceptions;
+using System;
+using System.Collections;
 //using DD4T.Utils;
 using System.Collections.Generic;
-using System.Web;
-using DD4T.ContentModel.Contracts.Providers;
-using System.Data.SqlClient;
 using System.Configuration;
-using System.Data;
-using System.Collections;
-using System.IO;
+using System.Web;
+using Tridion.ContentDelivery.DynamicContent;
+using Tridion.ContentDelivery.Meta;
 
-namespace DD4T.Providers.SDLWeb85.CIL
+namespace DD4T.Providers.SDLWeb9.CIL
 {
     /// <summary>
     /// Provide access to binaries in a Tridion broker instance

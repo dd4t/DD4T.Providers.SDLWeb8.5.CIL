@@ -1,17 +1,14 @@
-﻿using System;
-using System.Linq;
-using T = Tridion.ContentDelivery.DynamicContent;
-using Query = Tridion.ContentDelivery.DynamicContent.Query.Query;
-using TMeta = Tridion.ContentDelivery.Meta;
-using DD4T.ContentModel;
-using System.Collections.Generic;
+﻿using DD4T.ContentModel.Contracts.Logging;
 using DD4T.ContentModel.Contracts.Providers;
-using System.Collections;
 using DD4T.ContentModel.Querying;
-using DD4T.Utils;
-using DD4T.ContentModel.Contracts.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Query = Tridion.ContentDelivery.DynamicContent.Query.Query;
+using T = Tridion.ContentDelivery.DynamicContent;
+using TMeta = Tridion.ContentDelivery.Meta;
 
-namespace DD4T.Providers.SDLWeb85.CIL
+namespace DD4T.Providers.SDLWeb9.CIL
 {
     /// <summary>
     /// 
