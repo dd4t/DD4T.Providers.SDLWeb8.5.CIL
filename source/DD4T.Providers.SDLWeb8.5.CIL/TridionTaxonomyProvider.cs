@@ -1,11 +1,11 @@
-﻿using DD4T.ContentModel.Contracts.Providers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Tridion.ContentDelivery.Taxonomies;
 using Dynamic = DD4T.ContentModel;
+using Tridion.ContentDelivery.Taxonomies;
+using DD4T.ContentModel.Contracts.Providers;
 
-namespace DD4T.Providers.SDLWeb9.CIL
+namespace DD4T.Providers.SDLWeb85.CIL
 {
     public class TridionTaxonomyProvider : BaseProvider, ITaxonomyProvider, IDisposable
     {

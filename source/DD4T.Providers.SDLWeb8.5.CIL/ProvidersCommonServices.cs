@@ -1,10 +1,15 @@
 ﻿using DD4T.ContentModel.Contracts.Configuration;
-using DD4T.ContentModel.Contracts.Logging;
 using DD4T.ContentModel.Contracts.Providers;
 using DD4T.ContentModel.Contracts.Resolvers;
+using DD4T.ContentModel.Factories;
+using DD4T.ContentModel.Contracts.Logging;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DD4T.Providers.SDLWeb9.CIL
+namespace DD4T.Providers.SDLWeb85.CIL
 {
     public class ProvidersCommonServices : IProvidersCommonServices
     {

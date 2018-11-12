@@ -1,11 +1,11 @@
-﻿using DD4T.ContentModel.Contracts.Providers;
-using DD4T.Core.Contracts.DependencyInjection;
+﻿using DD4T.Core.Contracts.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using DD4T.ContentModel.Contracts.Providers;
 
-namespace DD4T.Providers.SDLWeb9.CIL
+namespace DD4T.Providers.SDLWeb85.CIL
 {
-    public class DependencyMappings : IDependencyMapper
+	public class DependencyMappings : IDependencyMapper
 	{
 		private IDictionary<Type, Type> Mappings()
 		{
