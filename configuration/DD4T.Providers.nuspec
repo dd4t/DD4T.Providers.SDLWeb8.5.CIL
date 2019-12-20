@@ -12,7 +12,7 @@
     <tags>SDLTridion Tridion SDL SDLWeb SDLWeb8 Web DD4T</tags>
     <dependencies>
       <dependency id="DD4T.Core" version="2.5" />
-      <dependency id="SDL.Web.Delivery" version="8.5.0" />
+      <dependency id="SDL.Web.Delivery" version="8.5.1041" />
     </dependencies>
   </metadata>
 </package>
