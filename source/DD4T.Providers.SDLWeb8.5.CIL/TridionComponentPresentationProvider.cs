@@ -28,8 +28,8 @@ namespace DD4T.Providers.SDLWeb85.CIL
         public TridionComponentPresentationProvider(IProvidersCommonServices providersCommonServices)
             : base(providersCommonServices)
         {
-            selectByComponentTemplateId = Configuration.SelectComponentByComponentTemplateId;
-            selectByOutputFormat = Configuration.SelectComponentByOutputFormat;
+            selectByComponentTemplateId = Configuration.SelectComponentPresentationByComponentTemplateId;
+            selectByOutputFormat = Configuration.SelectComponentPresentationByOutputFormat;
             _cpFactoryList = new Dictionary<int, T.ComponentPresentationFactory>();
             _cmFactoryList = new Dictionary<int,TMeta.ComponentMetaFactory>();
 
